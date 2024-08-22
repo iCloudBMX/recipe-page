@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Outfit;
+    background-color: #F3E5D8;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-page {
+    background-color: white;
+    width: 30%;
+    height: min-content;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.recipe-page__header__image {
+    /* height: 350px; */
+    width: 100%;
+    border-radius: 10px;
+    aspect-ratio: 2 / 1;
+}
+
+.recipe-page__header__title {
+    font-weight: 700;
+    font-family: Young serif;
+    margin-top: 30px;
+}
+
+.recipe-page__header__description {
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.recipe-page__header__time {
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: #FFF7FC;
+    padding: 40px;
+}
+
+.recipe-page__header__time p {
+    font-size: 24px;
+    color: #782E4C;
+    font-weight: 700;
+}
+
+.recipe-page__header__time ul {
+    margin-top: 20px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.recipe-page__header__time li {
+    padding-left: 20px;
+}
+
+.recipe-page__ingredients {
+    margin-top: 25px;
+}
+
+.recipe-page__ingredients__title {
+    color: #82442E;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: Young Serif;
+}
+
+.recipe-page__ingredients ul {
+    margin-left: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.recipe-page__ingredients li {
+    padding-left: 20px;
+}
+
+.recipe-page-splitter {
+    margin-top: 30px;
+    opacity: 30%;
+}
+
+.recipe-page__ingredients ol {
+    margin-left: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+ol > li::marker {
+    font-weight: bold;
+    color: #82442E;
+}
+
+.recipe-page__ingredients p {
+    margin-top: 20px;
+}
+
+.recipe-page__table {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.recipe-page__table__key {
+    padding-left: 20px;
+}
+
+.recipe-page__table__value {
+    color: #82442E;
+    font-weight: 700;
+}
+
+.recipe-page__table__splitter {
+    margin-top: 10px;
+    opacity: 30%;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .recipe-page {
+      width: 90%;
+    }
+}
